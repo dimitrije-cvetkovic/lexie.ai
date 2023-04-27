@@ -1,0 +1,29 @@
+.patients-table {
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 5px;
+
+  &__header {
+    border-bottom: 1px solid red;
+  }
+
+  &__row {
+    border-bottom: 2px solid red;
+  }
+
+  &__search {
+    position: relative;
+
+    &--icon {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      left: 10px;
+    }
+
+    & :deep(input) {
+      border: 1px solid !important;
+      border-radius: 6px;
+    }
+  }
+}

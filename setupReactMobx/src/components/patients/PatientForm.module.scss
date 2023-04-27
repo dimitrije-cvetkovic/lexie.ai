@@ -1,0 +1,44 @@
+.new-form {
+
+  & form {
+    padding: 50px;
+    border: 3px solid teal;
+    border-radius: 3px;
+    min-width: 350px;
+
+    & input {
+      line-height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 3px solid antiquewhite;
+      border-radius: 3px;
+      padding: 3px;
+      
+      &:focus-visible {
+        padding-left: 10px;
+        border-color: initial !important;
+        border: 3px solid teal !important;
+        box-shadow: none !important;
+      }
+  
+      &[type="submit"] {
+        cursor: pointer;
+        background-color: rgb(247, 206, 152);
+  
+        &:hover {
+          background-color: rgb(247, 169, 67);
+          border: 3px solid black;
+        }
+      }
+    }
+
+    & span {
+      line-height: 30px;
+    }
+  }
+
+  & p {
+    padding-left: 15px;
+    color: rgb(185, 44, 44);
+  }
+}

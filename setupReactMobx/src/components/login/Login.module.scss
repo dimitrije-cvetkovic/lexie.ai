@@ -1,0 +1,39 @@
+.login-form {
+
+  & form {
+    padding: 50px;
+    border: 3px solid sienna;
+    border-radius: 3px;
+    min-width: 350px;
+  }
+
+  & input {
+    line-height: 30px;
+    margin: 10px;
+    border: 3px solid antiquewhite;
+    border-radius: 3px;
+    padding: 3px;
+    
+    &:focus-visible {
+      padding-left: 10px;
+      border: 3px solid sienna !important;
+    }
+
+    &[type="submit"] {
+      cursor: pointer;
+      background-color: rgb(247, 206, 152);
+
+      &:hover {
+        background-color: rgb(247, 169, 67);
+        border: 3px solid black;
+      }
+    }
+  }
+
+  & p {
+    padding-left: 15px;
+    color: rgb(185, 44, 44);
+  }
+}
+  
+  

@@ -1,0 +1,43 @@
+@hostname = localhost
+@port = 8080
+@baseurl = http://{{hostname}}:{{port}}
+@contentTypeJson = application/json
+
+###
+###Get All Patients
+###
+GET {{baseurl}}/patients HTTP/1.1
+
+###
+###Add New Friend
+###
+
+POST {{baseurl}}/patients/add HTTP/1.1
+content-type: {{contentTypeJson}}
+
+{
+    "name": "test",
+    "status": "enemy"
+}
+
+###
+###Update Patient
+###
+
+PATCH {{baseurl}}/patients/update HTTP/1.1
+content-type: {{contentTypeJson}}
+
+{
+    "name": "test",
+}
+
+###
+###Delete Patient
+###
+
+DELETE {{baseurl}}/patients HTTP/1.1
+content-type: {{contentTypeJson}}
+
+{
+    "name": "test"
+}
